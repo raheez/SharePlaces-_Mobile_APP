@@ -1,17 +1,21 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import {
-  AppRegistry
-} from 'react-native';
+// import {
+//   AppRegistry
+// } from 'react-native';
+
+import FetchLocation from './components/FetchLocation'
 
 
 export default class app extends React.Component {
+  getUserLocationHandler = () => {
+ }
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reloads.</Text>
-        <Text>Shake your phone to open the developer menus.</Text>
+        <Text>hii</Text>
+      
+        <FetchLocation onGetLocation={this.getUserLocationHandler} />
       </View>
     );
   }
